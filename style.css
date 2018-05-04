@@ -1,19 +1,21 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&subset=cyrillic');
 h1 {
   color: #a52a2a; /* Цвет */
   font-size: 40pt; /* Размер шрифта в пунктах */
-  font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
+  /*font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
+  font-family: 'Press Start 2P', cursive;
   font-weight: normal; /* Нормальное начертание текста  */
 }
 pre {
     /*color: #a52a2a; /* Цвет */
     font-size: 20pt; /* Размер шрифта в пунктах */
-    font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
+    font-family: 'Press Start 2P', cursive;/* Семейство шрифтов */
     font-weight: normal; /* Нормальное начертание текста  */
 }
 p {
     color: #931427; /* Цвет */
     font-size: 120pt; /* Размер шрифта в пунктах */
-    font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
+    font-family: 'Press Start 2P', cursive; /* Семейство шрифтов */
     font-weight: normal; /* Нормальное начертание текста  */
 }
