@@ -15,7 +15,7 @@ pre {
 }
 p {
     color: #931427; /* Цвет */
-    font-size: 120pt; /* Размер шрифта в пунктах */
+    font-size: 80pt; /* Размер шрифта в пунктах */
     font-family: 'Press Start 2P', cursive; /* Семейство шрифтов */
     font-weight: normal; /* Нормальное начертание текста  */
 }
