@@ -5,7 +5,7 @@ pre {
   font-weight: normal; /* Нормальное начертание текста  */
   @font-face {
   font-family: "bison";
-  src: url("../bison.ttf") format("truetype");
+  src: url("bison.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   }
