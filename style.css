@@ -1,11 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 pre {
   color: #a52a2a; /* Цвет */
   font-size: 40pt; /* Размер шрифта в пунктах */
-  font-family: "bison"; /* Семейство шрифтов */
+  font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
   font-weight: normal; /* Нормальное начертание текста  */
-  @font-face {
-  font-family: "bison";
-  src: url("bison.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  }
