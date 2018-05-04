@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-pre {
+h1 {
   color: #a52a2a; /* Цвет */
   font-size: 40pt; /* Размер шрифта в пунктах */
   font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
   font-weight: normal; /* Нормальное начертание текста  */
+  h1 {
+    /*color: #a52a2a; /* Цвет */
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    font-family: 'Roboto', sans-serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
