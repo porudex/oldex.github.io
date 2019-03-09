@@ -4,9 +4,104 @@
   <head>
     <title>Cathulhu</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="style.css">
+    <link href="css/popupmenu.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
   </head>
   <body>
-    <p><a href="files/3.7z" download>Скачать файл</a>
+    <div class="navbarr">
+      <div title="Название бренда происходит от анаграммы Олейник/Дороженков" class="logo">
+        <img src="img/logo.png" width="120" height="60" alt="альтернативный текст">OLDEX
+      </div>
+      <a href="#home">Главная</a>
+      <a href="#news">Новости</a>
+      <div class="dropdownn">
+      <button class="dropbtnn" onclick="myFunction()">Разделы
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdownn-content" id="myDropdown">
+        <a href="#">Разработка</a>
+        <a href="#">Ресурсы</a>
+        <a href="#">Изменения</a>
+      </div>
+      </div>
+      <a class="login" href="#login">Войти</a>
+    </div>
+
+    <div class="container">
+      <br>
+      <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Вспышка справа" data-content="Молодцом, так держать!">Вспышка справа</a>
+  <br>
+  <br>
+  <br>
+  <br>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Снял снайпера.">
+  Сверху палят
+    </button>
+    <br>
+<br>
+<br>
+<br>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Да не сюда!">
+    Сбоку,сбоку заходи!
+    </button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Лови лимончик, п@дла!">
+    С другого бока заходи!
+    </button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Аааа... Маслину поймал...">
+    Вали п3тушар!
+    </button>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+  <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+</span>
+</button>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtnn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+$(function() {
+$('[data-toggle="popover"]').popover({
+  trigger: 'focus'
+});
+})
+</script>
   </body>
 </html>
