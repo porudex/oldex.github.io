@@ -2,81 +2,120 @@
 
 <html>
   <head>
-    <title>Cathulhu</title>
+    <title>OLDEX</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link href="css/popupmenu.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
-  <script src="https://js.cx/libs/animate.js"></script>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/modal.css" rel="stylesheet" type="text/css" />
+	  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
   </head>
   <body>
-      <div class="box1">
-    <div class="navbarr">
-      <div id="logo" class="logo">
-        OLDEX
+
+        <div id="leftmenu">
+          <ul id="leftnavbar">
+            <div class="logo">OLDEX</div>
+	          <li id="lbmenu"><a href="#">Загрузить</a></li>
+            <li id="lbmenu"><a href="#">Скачать</a></li>
+            <li id="lastlbmenu"><a href="#">НАСТРОЙКИ</a></li>
+            <li id="lbmenu"><a href="#">Мой кабинет</a></li>
+            <li id="leftcrumb"><a href="#">->Диплом</a></li>
+            <li id="leftcrumb"><a href="#">->Документы</a></li>
+            <li id="leftcrumb"><a href="#">->ГОСТЫ</a></li>
+          </ul>
+        </div>
+        <div id="topmenu">
+          <ul id="topnavbar">
+
+            <li id="tbmenu"><a href="#">НОВОСТИ</a></li>
+            <li id="tbmenu"><a href="#">О ПРОЕКТЕ</a></li>
+            <li id="tbmenu"><a href="#">СПРАВОЧНИК</a></li>
+            <li id="tbmenu"><a href="#">ССЫЛКИ</a></li>
+            <li id="tbmenu" style="float:right"><a class="login" href="#login_form">Войти</a></li>
+         </ul>
+        </div>
+        <div style="margin-left:10%;padding-top: 45px;">
+          <ul id="navbar">
+            <li id="tmenu">
+              <ul id="breadcrumb">
+              <li><a href="#"> Мой кабинет</a></li>
+              <li><a href="#"> Диплом</a></li>
+              <li><a href="#"> Документы</a></li>
+              <li><a href="#"> ГОСТЫ</a></li>
+            </ul>
+          </br>
+          </br>
+        </br>
+            <table>
+                    <tr><th>Имя файла</th><th>Тип файла</th><th>Размер</th><th>Доступность</th></tr>
+                    <tr><td>ГОСТ 19.201-78 Техническое задание</td><td>.doc</td><td>8476 кб</td><td><button>Скачать</button></td></tr>
+                    <tr><td>ГОСТ 19.106-78 Единая система программной документации. Требования к программным документам, выполненным печатным способом</td><td>.pdf</td><td>1456 кб</td><td><button>Скачать</button></td></tr>
+                    <tr><td>ГОСТ 19.104-78 Единая система программной документации. Основные надписи</td><td>.docx</td><td>2500 кб</td><td><button>Скачать</button></td></tr>
+                    <tr><td style="background-color:#1abc9c;color:white;">ГОСТ 2.301-68 Единая система конструкторской документации. Форматы</td><td>.pdf</td><td>8146 кб</td><td><button>Скачать</button></td></tr>
+            </table>
+          </li>
+         </ul>
       </div>
-      <a href="#home">Главная</a>
-      <a href="#news">Новости</a>
-      <div class="dropdownn">
-      <button class="dropbtnn" onclick="myFunction()">Разделы
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdownn-content" id="myDropdown">
-        <a href="#">Разработка</a>
-        <a href="#">Ресурсы</a>
-        <a href="#">Изменения</a>
-      </div>
-      </div>
-      <a class="login" href="#login">Войти</a>
-    </div>
+      <li id="t2menu">
+        <table>
+                <tr><th>ГОСТ 2.301-68 Единая система конструкторской документации. Форматы</th><th>.pdf</th><th>8146 кб</th><th><button>Скачать</button></th></tr>
+                <tr><td>Теги</td><td></td><td></td><td></td></tr>
+                <tr><td><div class="tags">
+                  <a href="#">Гонтовой Сергей Викторович</a>
+                  <a href="#">СКС</a>
+                  <a href="#">2019</a></div></td><td></td><td></td><td></td></tr>
+                <tr><td><button>Изменить теги</button></td><td><button>Отправить</button></td><td><button>Архивировать</button></td><td><button>Удалить файл</button></td></tr>
 
-    <div class="welcometext">
-      <h3> Добро пожаловать на сайт OLDEX. Здесь вы можете найти нужную вам информацию, полезные ссылки, программы. Сайт создан студентами
-    СКС-15 ДонГТУ - Дороженковым Павлом и Олейником Даниилом</h3>
-    </div>
+        </table>
+      </li>
+              <!-- popup form #1 -->
+              <a href="#x" class="overlay" id="login_form"></a>
+              <div class="popup">
+                  <h2>Приветствуем, гость!</h2>
+                  <p>Чтобы использовать полный функционал ресурса, просим вас пройти авторизацию</p>
+                  <div>
+                      <label for="login">Ваш логин</label>
+                      <input type="text" id="login" value="" />
+                  </div>
+                  <div>
+                      <label for="password">Ваш пароль</label>
+                      <input type="password" id="password" value="" />
+                  </div>
+                  <input type="button" value="Войти" />
+                  &nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;
+                  <a href="#join_form" id="join_pop">Регистрация</a>
+                  <a class="close" href="#close"></a>
+              </div>
 
-</div>
+              <!-- popup form #2 -->
+              <a href="#x" class="overlay" id="join_form"></a>
+              <div class="popup">
+                  <h2>Регистрация</h2>
+                  <p>Пожалуйста, будьте внимательны при заполнении данных</p>
+                  <div>
+                      <label for="email">Логин (Email)</label>
+                      <input type="text" id="email" value="" />
+                  </div>
+                  <div>
+                      <label for="pass">Пароль</label>
+                      <input type="password" id="pass" value="" />
+                  </div>
+                  <div>
+                      <label for="firstname">Имя</label>
+                      <input type="text" id="firstname" value="" />
+                  </div>
+                  <div>
+                      <label for="lastname">Фамилия</label>
+                      <input type="text" id="lastname" value="" />
+                  </div>
+                  <div>
+                      <label for="lastname">Код пользователя (ID)</label>
+                      <input type="text" id="idreg" value="" />
+                  </div>
+                  <p>Обратите внимание, что для регистрации необходим код пользователя.</p>
+                  <p>Код пользователя, можно получить на кафедре группы студента, либо в ИВЦ.</p>
+                  <input type="button" value="Регистрация" />&nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Войти</a>
 
-  <div class="box2">
-      <div class="container">
-        <br>
-        <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Скачивание началось" data-content="Если вы читаете это сообщение, а скачивание не началось, напишите в поддержку сайта!" href="files/3.7z" download>Скачать файл (Степан)</a>
-  </div>
-
-  <form enctype="multipart/form-data" method="post">
-     <p>Загрузите ваши фотографии на сервер</p>
-     <p><input type="file" name="photo" multiple accept="img/*,img/jpeg">
-     <input type="submit" value="Отправить"></p>
-    </form>
-    </div>
-
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtnn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
-<script>
-$(function() {
-$('[data-toggle="popover"]').popover({
-  trigger: 'focus'
-});
-})
-</script>
+                  <a class="close" href="#close"></a>
+              </div>
   </body>
 </html>
