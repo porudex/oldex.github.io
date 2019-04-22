@@ -1,117 +1,111 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html>
   <head>
     <title>OLDEX</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link href="css/popupmenu.css" rel="stylesheet">
-    <link href="css/layout.css" rel="stylesheet" type="text/css" />
     <link href="css/modal.css" rel="stylesheet" type="text/css" />
 	  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-
-        <div id="leftmenu">
-          <ul id="leftnavbar">
-            <div class="logo">OLDEX</div>
-	          <li id="lbmenu"><a href="#">Загрузить</a></li>
-            <li id="lbmenu"><a href="#">Скачать</a></li>
-            <li id="lastlbmenu"><a href="#">НАСТРОЙКИ</a></li>
-            <li id="lbmenu"><a href="#">Мой кабинет</a></li>
-            <li id="leftcrumb"><a href="#">->Диплом</a></li>
-            <li id="leftcrumb"><a href="#">->Документы</a></li>
-            <li id="leftcrumb"><a href="#">->ГОСТЫ</a></li>
+    <header>
+    </header>
+    <div class="main">
+      <div class="top">
+        <ul id="topnavbar">
+          <li ><a href="#index" class="logo">OLDEX</a><a href="#index" class="logomin">O</a></li>
+          <li class="firsttopbutton"><a href="#">Новости</a></li>
+          <li class="topbutton"><a href="#">О проекте</a></li>
+          <li class="topbutton"><a href="#">Помощь</a></li>
+          <li class="topbutton"><a class="login" href="#login_form">Войти</a></li>
+          <li class="menumin"><a class="minbut" href="#"><i class="fas fa-upload fa-lg"></i></a><a class="minbut"  href="#"><i class="fas fa-download fa-lg"></i></a><a class="minbut"  href="#"><i class="fas fa-cogs fa-lg"></i></a><a class="minbut" href="#"><i class="fas fa-id-card fa-lg"></i></a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="left">
+          <!--Больше 1000px ширина-->
+          <ul id="leftnavbar" >
+            <li id="lbmenu"><a href="#"><i class="fas fa-upload fa-lg"></i> Загрузить</a></li>
+            <li id="lbmenu"><a href="#"><i class="fas fa-download fa-lg"></i> Скачать</a></li>
+            <li id="lbmenu"><a href="#"><i class="fas fa-cogs fa-lg"></i> Настройки</a></li>
+            <li id="lbmenu"><a href="#" style="background-color: #f0f0f0;color: #176fa7;"><i class="fas fa-id-card fa-lg"></i> Мой кабинет</a></li>
+          </ul>
+          <!--Меньше 1000px ширина-->
+          <ul id="leftnavbarmin" >
+            <li ><a href="#"><i class="fas fa-upload fa-lg"></i></a></li>
+            <li ><a href="#"><i class="fas fa-download fa-lg"></i></a></li>
+            <li ><a href="#"><i class="fas fa-cogs fa-lg"></i></a></li>
+            <li ><a href="#" style="background-color: #f0f0f0;color: #176fa7;"><i class="fas fa-id-card fa-lg"></i></a></li>
           </ul>
         </div>
-        <div id="topmenu">
-          <ul id="topnavbar">
+        <div class="right">
+      <table class="worktable">
+              <tr><th>Имя файла</th><th>Тип файла</th><th>Размер</th><th>Доступность</th></tr>
+              <tr><td>ГОСТ 19.201-78 Техническое задание</td><td>.doc</td><td>8476 кб</td><td><button>Скачать</button></td></tr>
+              <tr><td>ГОСТ 19.106-78 Единая система программной документации. Требования к программным документам, выполненным печатным способом</td><td>.pdf</td><td>1456 кб</td><td><button>Скачать</button></td></tr>
+              <tr><td>ГОСТ 19.104-78 Единая система программной документации. Основные надписи</td><td>.docx</td><td>2500 кб</td><td><button>Скачать</button></td></tr>
+              <tr><td style="background-color:#1abc9c;color:white;">ГОСТ 2.301-68 Единая система конструкторской документации. Форматы</td><td>.pdf</td><td>8146 кб</td><td><button>Скачать</button></td></tr>
+              <tr><td>Теги</td><td></td><td></td><td></td></tr>
+              <tr><td><div class="tags">
+                <a href="#">Дороженков Павел Александрович</a>
+                <a href="#">СКС</a>
+                <a href="#">2019</a></div></td><td></td><td></td><td></td></tr>
+              <tr><td><button>Изменить теги</button></td><td><button>Отправить</button></td><td><button>Архивировать</button></td><td><button>Удалить файл</button></td></tr>
 
-            <li id="tbmenu"><a href="#">НОВОСТИ</a></li>
-            <li id="tbmenu"><a href="#">О ПРОЕКТЕ</a></li>
-            <li id="tbmenu"><a href="#">СПРАВОЧНИК</a></li>
-            <li id="tbmenu"><a href="#">ССЫЛКИ</a></li>
-            <li id="tbmenu" style="float:right"><a class="login" href="#login_form">Войти</a></li>
-         </ul>
+      </table>
         </div>
-        <div style="margin-left:10%;padding-top: 45px;">
-          <ul id="navbar">
-            <li id="tmenu">
-              <ul id="breadcrumb">
-              <li><a href="#"> Мой кабинет</a></li>
-              <li><a href="#"> Диплом</a></li>
-              <li><a href="#"> Документы</a></li>
-              <li><a href="#"> ГОСТЫ</a></li>
-            </ul>
-          </br>
-          </br>
-        </br>
-            <table>
-                    <tr><th>Имя файла</th><th>Тип файла</th><th>Размер</th><th>Доступность</th></tr>
-                    <tr><td>ГОСТ 19.201-78 Техническое задание</td><td>.doc</td><td>8476 кб</td><td><button>Скачать</button></td></tr>
-                    <tr><td>ГОСТ 19.106-78 Единая система программной документации. Требования к программным документам, выполненным печатным способом</td><td>.pdf</td><td>1456 кб</td><td><button>Скачать</button></td></tr>
-                    <tr><td>ГОСТ 19.104-78 Единая система программной документации. Основные надписи</td><td>.docx</td><td>2500 кб</td><td><button>Скачать</button></td></tr>
-                    <tr><td style="background-color:#1abc9c;color:white;">ГОСТ 2.301-68 Единая система конструкторской документации. Форматы</td><td>.pdf</td><td>8146 кб</td><td><button>Скачать</button></td></tr>
-                    <tr><td>Теги</td><td></td><td></td><td></td></tr>
-                    <tr><td><div class="tags">
-                      <a href="#">Дороженков Павел Александрович</a>
-                      <a href="#">СКС</a>
-                      <a href="#">2019</a></div></td><td></td><td></td><td></td></tr>
-                    <tr><td><button>Изменить теги</button></td><td><button>Отправить</button></td><td><button>Архивировать</button></td><td><button>Удалить файл</button></td></tr>
-
-            </table>
-          </li>
-         </ul>
       </div>
+    </div>
+    <footer>  <!-- popup form #1 -->
+      <a href="#x" class="overlay" id="login_form"></a>
+      <div class="popup">
+          <h2>Приветствуем, гость!</h2>
+          <p>Чтобы использовать полный функционал ресурса, просим вас пройти авторизацию</p>
+          <div>
+              <label for="login">Ваш логин</label>
+              <input type="text" id="login" value="" />
+          </div>
+          <div>
+              <label for="password">Ваш пароль</label>
+              <input type="password" id="password" value="" />
+          </div>
+          <input type="button" value="Войти" />
+          &nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;
+          <a href="#join_form" id="join_pop">Регистрация</a>
+          <a class="close" href="#close"></a>
+      </div>
+      <!-- popup form #2 -->
+      <a href="#x" class="overlay" id="join_form"></a>
+      <div class="popup">
+          <h2>Регистрация</h2>
+          <p>Пожалуйста, будьте внимательны при заполнении данных</p>
+          <div>
+              <label for="email">Логин (Email)</label>
+              <input type="text" id="email" value="" />
+          </div>
+          <div>
+              <label for="pass">Пароль</label>
+              <input type="password" id="pass" value="" />
+          </div>
+          <div>
+              <label for="firstname">Имя</label>
+              <input type="text" id="firstname" value="" />
+          </div>
+          <div>
+              <label for="lastname">Фамилия</label>
+              <input type="text" id="lastname" value="" />
+          </div>
+          <div>
+              <label for="lastname">Код пользователя (ID)</label>
+              <input type="text" id="idreg" value="" />
+          </div>
+          <p>Обратите внимание, что для регистрации необходим код пользователя.</p>
+          <p>Код пользователя, можно получить на кафедре группы студента, либо в ИВЦ.</p>
+          <input type="button" value="Регистрация" />&nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Войти</a>
 
-              <!-- popup form #1 -->
-              <a href="#x" class="overlay" id="login_form"></a>
-              <div class="popup">
-                  <h2>Приветствуем, гость!</h2>
-                  <p>Чтобы использовать полный функционал ресурса, просим вас пройти авторизацию</p>
-                  <div>
-                      <label for="login">Ваш логин</label>
-                      <input type="text" id="login" value="" />
-                  </div>
-                  <div>
-                      <label for="password">Ваш пароль</label>
-                      <input type="password" id="password" value="" />
-                  </div>
-                  <input type="button" value="Войти" />
-                  &nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;
-                  <a href="#join_form" id="join_pop">Регистрация</a>
-                  <a class="close" href="#close"></a>
-              </div>
-
-              <!-- popup form #2 -->
-              <a href="#x" class="overlay" id="join_form"></a>
-              <div class="popup">
-                  <h2>Регистрация</h2>
-                  <p>Пожалуйста, будьте внимательны при заполнении данных</p>
-                  <div>
-                      <label for="email">Логин (Email)</label>
-                      <input type="text" id="email" value="" />
-                  </div>
-                  <div>
-                      <label for="pass">Пароль</label>
-                      <input type="password" id="pass" value="" />
-                  </div>
-                  <div>
-                      <label for="firstname">Имя</label>
-                      <input type="text" id="firstname" value="" />
-                  </div>
-                  <div>
-                      <label for="lastname">Фамилия</label>
-                      <input type="text" id="lastname" value="" />
-                  </div>
-                  <div>
-                      <label for="lastname">Код пользователя (ID)</label>
-                      <input type="text" id="idreg" value="" />
-                  </div>
-                  <p>Обратите внимание, что для регистрации необходим код пользователя.</p>
-                  <p>Код пользователя, можно получить на кафедре группы студента, либо в ИВЦ.</p>
-                  <input type="button" value="Регистрация" />&nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Войти</a>
-
-                  <a class="close" href="#close"></a>
-              </div>
+          <a class="close" href="#close"></a>
+      </div></footer>
   </body>
 </html>

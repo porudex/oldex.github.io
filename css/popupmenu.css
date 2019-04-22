@@ -1,119 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(237, 237, 237);
+}
+.top{
+  min-height: 40px;
+}
 #topnavbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: 10%;
   overflow: hidden;
   background-color: #ffffff;
-  width: 90%;
-  min-width: 90%;
+  width: 100%;
   position: fixed;
+  z-index: 1;
 }
-#navbar{
-list-style-type: none;
-margin: 0;
-padding: 0;
-margin-left: -4.5%;
-margin-top: -0.55%;
+#topnavbar a{
+  text-decoration: none
 }
-#tmenu{
-  margin-left: 4%;
-  width: 90%;
-  height: 100%;
-  border:  2px solid #3498db;
-  position:fixed;
-}
-#tbmenu {
+#topnavbar a:not(.login){
   float: left;
 }
-#tbmenu a{
-  display: block;
-  text-align: center;
-  padding: 10px 16px;
-  text-decoration: none;
+#topnavbar a:not(.logo):not(.login):not(.logomin){
+    color: #176fa7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-#tbmenu a:not(.login) {
-color: #176fa7;
-}
-#tbmenu a:hover:not(.login) {
+#topnavbar a:hover:not(.login):not(.logo):not(.logomin):not(.minbut) {
   background-color: #176fa7;
   color:  #f0f0f0;
-  font-weight:500;
 }
-/*#leftmenu{
-	position:fixed;
-	left:  0px;
-	top:8%;
-	width:120px;
+.menumin{
+  display: none;
+  color: #176fa7;
+ margin-bottom: 20px;
+  text-decoration: none;
+}
+.menumin i{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.logo {
+	font-family: 'Cinzel Decorative', cursive;
+	color:#176fa7;
+	font-size:22px;
+  user-select: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.logomin{
+  font-family: 'Cinzel Decorative', cursive;
+	color:#176fa7;
+	font-size:22px;
+  user-select: none;
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  user-select: none;
+  display: none;
+}
+.firsttopbutton{
+  margin-left: 15%;
+}
+.login{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: right;
+  color: #f0f0f0;
+  background-color: #176fa7;
+}
+.container{
+  z-index: 0;
+  padding: 0 auto;
+  margin: 0 auto;
   height: 100%;
-  background-color: rgb(49, 152, 170);
+  width: 100%;
+  background-color: #e7e7e7;
 }
-*/
-body {
-  margin: 0;
-
+.left{
+  float: left;
+  width: 14%;
+  height: 90vh;
+  background-color: rgb(64, 170, 64);
 }
-
-#leftmenu ul {
+#leftnavbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 10%;
-  min-width: 10%;
-  background-color: #176fa7;
-  position: fixed;
   height: 100%;
+  background-color: #55a6da;
   overflow: auto;
 }
-
-#leftmenu a {
+#leftnavbar a {
   text-align: left;
   display: block;
   color: #f0f0f0;
   padding: 8px 16px;
   text-decoration: none;
 }
-#leftcrumb a{
-  margin-left: 10px;
-  font-size: 12px;
+#leftnavbar a:hover{
+  background-color: #f0f0f0;
+  color: #176fa7;
 }
-#leftmenu a:hover:not(.logo) {
-  background-color: #1abc9c;
+#leftnavbarmin {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #55a6da;
+  display: none;
+  overflow:hidden;
 }
-.login {
+#leftnavbarmin a {
   color: #f0f0f0;
-  background-color: #176fa7;
+ padding-top: 10px;
+ padding-bottom: 10px;
+  text-decoration: none;
 }
-.logo {
-	font-family: 'Cinzel Decorative', cursive;
-	color:#176fa7;
-  background-color: #ffffff;
-	font-size:29px;
-  user-select: none;
-  padding-left: 20px;
-
+#leftnavbarmin i {
+  margin-bottom: 10px;
+      width: 65px;
+  padding: 8px 16px;
 }
-table {
-  border: 1px solid #6cf;
-  margin-top: -14px;
+#leftnavbarmin a:hover{
+  background-color: #f0f0f0;
+  color: #176fa7;
 }
-th {
-  font-weight: normal;
-  font-size: 13px;
-  color: #039;
-  text-transform: uppercase;
-  border-right: 1px solid #0865c2;
-  border-top: 1px solid #0865c2;
-  border-left: 1px solid #0865c2;
-  border-bottom: 1px solid #0865c2;
-  padding: 20px;
+.right{
+  float: right;
+  width: 85%;
+  height: 95vh;
+  background-color: rgb(237, 237, 237);
 }
-td {
-  color: #669;
-  border-right: 1px dashed #6cf;
-  padding: 10px 20px;
+@media screen and (max-width: 1100px) {
+  .right{
+  }
+  .left{
+    max-width: 65px;
+  }
+  #leftnavbar{
+    display: none;
+  }
+  #leftnavbarmin{
+    display: block;
+  }
+  .logo{
+    display: none;
+  }
+  .logomin{
+    display: block;
+  }
+  .firsttopbutton{
+    margin-left: 65px;
+  }
 }
-
+@media screen and (max-width: 600px) {
+  #topnavbar a:not(.minbut) {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+  .left{
+    display: none;
+  }
+  .menumin{
+    display: block;
+  }
+  .right{
+    margin-top: 225px;
+    float: none;
+    width: 100%;
+  }
+  .logo{
+    margin-left: 15px;
+  }
+  .firsttopbutton{
+    margin-left: 0;
+  }
+}
+.worktable{
+  margin-top: 10px;
+}
 .tags a {
   display: inline-block;
   height: 21px;
